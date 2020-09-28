@@ -4,10 +4,12 @@
   display: grid;
   height: 90vh;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 0.5fr 4fr;
+  grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
   grid-template-areas:
     "logoid navid contacid"
-    "sidebar content content";
+    "sidebar content content"
+    "section-footer section-footer section-footer"
+    "footer footer footer";
   grid-gap: 0.4rem;
   justify-content: center;
   align-content: center;
@@ -33,7 +35,14 @@
   grid-area: content;
   background: #7ff9fd;
 }
-
+.section-footer {
+  grid-area: section-footer;
+  background: #7ff9fd;
+}
+.footer {
+  grid-area: section-footer;
+  background: #7ff9fd;
+}
 .logo {
   cursor: pointer;
 }
