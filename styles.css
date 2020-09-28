@@ -2,11 +2,14 @@
 
 .container {
   display: grid;
-  height: 90vh;
+  height: 100vh;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
   grid-template-columns: 1fr 4fr 1fr;
-  grid-template-rows: 0.5fr 4fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr 4fr 0.5fr 0.5fr;
   grid-template-areas:
-    "logoid navid contacid"
+    "logoid . ."
+    "navid navid navid"
     "sidebar content content"
     "section-footer section-footer section-footer"
     "footerclass footerclass footerclass";
@@ -23,15 +26,11 @@
   background: #7ff9fd;
 }
 
-#contactid {
-  grid-area: contacid;
-  background: #7ff9fd;
-}
-#sidebar {
+.sidebar {
   grid-area: sidebar;
   background: #7ff9fd;
 }
-#content {
+.main {
   grid-area: content;
   background: #7ff9fd;
 }
@@ -42,6 +41,11 @@
 .footerclass {
   grid-area: footerclass;
   background: #7ff9fd;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 5%;
 }
 .logo {
   cursor: pointer;
