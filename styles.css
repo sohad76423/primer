@@ -40,7 +40,7 @@
   background: #7ff9fd;
 }
 .footer {
-  grid-area: section-footer;
+  grid-area: footer;
   background: #7ff9fd;
 }
 .logo {
