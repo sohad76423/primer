@@ -9,7 +9,7 @@
     "logoid navid contacid"
     "sidebar content content"
     "section-footer section-footer section-footer"
-    "footer footer footer";
+    "footerclass footerclass footerclass";
   grid-gap: 0.4rem;
   justify-content: center;
   align-content: center;
@@ -39,8 +39,8 @@
   grid-area: section-footer;
   background: #7ff9fd;
 }
-.footer {
-  grid-area: footer;
+.footerclass {
+  grid-area: footerclass;
   background: #7ff9fd;
 }
 .logo {
